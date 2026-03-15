@@ -104,7 +104,7 @@ display:none;
 justify-content:flex-start;
 align-items:flex-start;
 padding-left:90px;
-padding-top:220px;
+padding-top:20px;
 }
 .popup{
 background:white;
@@ -121,6 +121,12 @@ border-radius:20px;
 background:#ff4fa3;
 color:white;
 cursor:pointer;
+}
+.popup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 /* message */
 #warning{
@@ -143,16 +149,16 @@ font-weight:bold;
 
 <!-- popup -->
 <div class="popup-bg" id="popupBg">
-<div class="popup">
-<h3>I love you my duniaya 🌸</h3>
-<p>You are the most Beautiful girl in the world !</p>
-<button onclick="closePopup()">Close</button>
-</div>
+  <div class="popup">
+<img src="WhatsApp Image 2026-03-15 at 23.36.59.jpeg" alt="Love Image" class="popup-img">    <h3>I love you my duniaya 🌸</h3>
+    <p>You are the most Beautiful girl in the world !</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
 </div>
 
 <script>
 // Flower list
-const flowers=["🌹","🌸","🌷","🌻","🌼","💐","🌺","🪻","🥀"];
+const flowers=["🌹","🌸","🌷","🌻","🌼 ","💐","🌺","🪻","🥀"];
 const picker=document.getElementById("picker");
 const bouquet=document.getElementById("bouquet");
 const warning=document.getElementById("warning");
